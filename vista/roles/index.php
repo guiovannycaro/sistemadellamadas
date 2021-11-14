@@ -300,11 +300,11 @@
             $('#Eliminar').click(function () {
 
                 $.ajax({
-                    type: "POST",
-                    method: "post",
-                    url: 'roles.php?r=eliminar',
-                    data: 'id=' + id,
-                    success: function (data)
+                       type: "POST",
+                       method: "post",
+                       url: 'roles.php?r=eliminar',
+                       data: 'id=' + id,
+                       success: function (data)
                     {
                         alertify.alert('Mensaje Informativo', 'se elimino el registro', function () {
                             alertify.success('Ok');
